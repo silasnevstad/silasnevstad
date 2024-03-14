@@ -1,5 +1,5 @@
-## Hi there 👋 I'm Silas Nevsyad!
-### CS @ Northeastern
+### Hi there 👋 I'm Silas Nevsyad!
+#### CS @ Northeastern
 
 - 📫 How to reach me: **nevstads@gmail.com**
 
@@ -12,7 +12,7 @@
   <a href="https://linkedin.com/in/silas-nevstad" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="silasnevstad" height="30" width="40" /></a>
 </p>
 
-## Languages and Tools:
+#### Languages and Tools:
 <p align="left"> 
   <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> 
   <a href="https://go.dev" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="go" width="40" height="40"/> </a> 
