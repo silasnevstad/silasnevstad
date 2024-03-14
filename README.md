@@ -1,5 +1,5 @@
-### Hi there 👋 I'm Silas Nevsyad!
-## CS @ Northeastern
+## Hi there 👋 I'm Silas Nevsyad!
+### CS @ Northeastern
 
 - 📫 How to reach me: **nevstads@gmail.com**
 
