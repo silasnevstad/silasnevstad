@@ -1,9 +1,9 @@
 ### Hi there 👋 I'm Silas Nevstad!
 #### CS @ Northeastern
 
-- 📫 How to reach me: **nevstads@gmail.com**
-
 - 🔎 Learn more about me: [silasn.com](https://www.silasn.com)
+
+- 📫 How to reach me: **nevstads@gmail.com**
 
 - 📄 Know about my experiences: [Resume](https://www.silasn.com/resume)
 
