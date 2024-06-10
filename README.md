@@ -29,5 +29,5 @@
   <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/></a> 
 </p>
 
-<a href="https://github-readme-stats.vercel.app/api?username=silasnevstad"><img align="center" src="https://github-readme-stats.vercel.app/api?username=silasnevstad&show_icons=true&theme=vue&hide_border=true" alt="Silas's github stats" /></a> | <a href="https://github-readme-stats.vercel.app/api?username=silasnevstad"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=silasnevstad&layout=compact&theme=vue&hide_border=true" /></a> |
+<a href="https://github-readme-stats.vercel.app/api?username=silasnevstad"><img align="center" src="https://github-readme-stats.vercel.app/api?username=silasnevstad&show_icons=true&theme=vue&hide_border=true" alt="Silas's github stats" /></a> | <a href="https://github-readme-stats.vercel.app/api/top-langs/?username=silasnevstad"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=silasnevstad&layout=compact&theme=vue&hide_border=true" /></a> |
 | ------------- | ------------- 
