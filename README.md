@@ -1,4 +1,4 @@
-### Hi there 👋 I'm Silas Nevstad!<br/><sup>Software Engineer | Solopreneur (Backend & Full-Stack & ML)</sup><br/><sup>CS, AI @ Northeastern</sup>
+### Hi there 👋 I'm Silas Nevstad!<br/><sup>Software Engineer | Solopreneur (Backend, Full-Stack, ML)</sup><br/><sup>CS, AI @ Northeastern</sup>
 
 - 🔎 Learn more about me: [silasn.com](https://www.silasn.com)
 
