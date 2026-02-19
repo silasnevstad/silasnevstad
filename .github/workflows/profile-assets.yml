@@ -5,19 +5,28 @@ on:
   schedule:
     - cron: "0 3 * * *"
 
+concurrency:
+  group: profile-assets-${{ github.repository }}
+  cancel-in-progress: true
+
 permissions:
   contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+
     steps:
       - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
 
       - name: Ensure output dir
         run: mkdir -p profile
 
-      # ---- GitHub Readme Stats (SVGs) ----
+      # ---- GitHub Readme Stats ----
       - name: Generate stats card
         uses: readme-tools/github-readme-stats-action@v1
         with:
@@ -44,26 +53,33 @@ jobs:
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
 
-      # ---- Custom 26-week activity line chart (SVG) ----
+      # ---- Account-wide 26-week activity line chart (GraphQL) ----
       - name: Python deps
         run: |
           python -m pip install --upgrade pip
           pip install matplotlib requests
 
-      - name: Generate 26w activity chart (SVG)
+      - name: Generate 26w activity chart (account-wide)
         env:
-          GH_OWNER: ${{ github.repository_owner }}
-          GH_REPO: silasnevstad   # pick ONE repo to chart; or change to another
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_LOGIN: ${{ github.repository_owner }}
+          GH_TOKEN: ${{ secrets.METRICS_TOKEN }}
           OUT_PATH: profile/activity-26w.svg
         run: |
-          python scripts/gen_activity_chart.py
+          python scripts/gen_activity_chart_graphql.py
 
-      # ---- Commit everything once ----
+      # ---- Commit ----
       - name: Commit profile assets
         run: |
+          set -e
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add profile/*.svg
-          git commit -m "chore: update profile assets" || exit 0
-          git push
+          git diff --cached --quiet && exit 0
+
+          git commit -m "chore: update profile assets"
+
+          git fetch origin "$DEFAULT_BRANCH"
+          git pull --rebase origin "$DEFAULT_BRANCH"
+
+          git push origin HEAD:"$DEFAULT_BRANCH"
