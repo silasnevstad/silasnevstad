@@ -1,33 +1,53 @@
-### Hi there 👋 I'm Silas Nevstad!<br/><sup>Software Engineer | Solopreneur (Backend, Full-Stack, ML)</sup><br/><sup>CS, AI @ Northeastern</sup>
+# 👋 Hello, I’m Silas Nevstad
 
-- 🔎 Learn more about me: [silasn.com](https://www.silasn.com)
+<sub><b>Software engineer</b> · <b>solopreneur</b> · backend / full-stack / ML</sub>
 
-- 📫 How to reach me: **nevstads@gmail.com**
-
-- 📄 Know about my experiences: [Resume](https://www.silasn.com/resume)
-
-- Connect with me <a href="https://linkedin.com/in/silas-nevstad" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="silasnevstad" height="30" width="40" /></a>
-
-#### Languages and Tools:
-<p align="left"> 
-  <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/></a>
-  <a href="https://go.dev" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="go" width="40" height="40"/></a> 
-  <a href="https://www.javascript.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" alt="java" width="40" height="40"/></a>
-  <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/></a> 
-  <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/></a>
-  
-  <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/></a> 
-  <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg" alt="react" width="40" height="40"/></a> 
-  <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/></a> 
-  <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/></a>
-  <a href="https://graphql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/github/explore/5c058a388828bb5fde0bcafd4bc867b5bb3f26f3/topics/graphql/graphql.png" alt="postgresql" width="40" height="40"/></a>
-  <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/></a>
-  <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/></a> 
-  <a href="https://supabase.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/supabase/supabase-original.svg" alt="mongodb" width="40" height="40"/></a> 
-  <a href="https://aws.amazon.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="firebase" width="40" height="40"/></a> 
-  <a href="https://cloud.google.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/googlecloud/googlecloud-original.svg" alt="firebase" width="40" height="40"/></a> 
-  <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/></a> 
+<p>
+  <a href="https://www.silasn.com"><img alt="Website" src="https://img.shields.io/badge/silasn.com-6d72f6?style=flat&logo=googlechrome&logoColor=ffffff" /></a>
+  <a href="https://www.silasn.com/resume"><img alt="Resume" src="https://img.shields.io/badge/resume-6d72f6?style=flat&logo=readthedocs&logoColor=ffffff" /></a>
+  <a href="https://linkedin.com/in/silas-nevstad"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-6d72f6?style=flat&logo=linkedin&logoColor=ffffff" /></a>
+  <a href="https://x.com/YOUR_HANDLE"><img alt="X" src="https://img.shields.io/badge/x-6d72f6?style=flat&logo=x&logoColor=ffffff" /></a>
+  <a href="mailto:nevstads@gmail.com"><img alt="Email" src="https://img.shields.io/badge/email-6d72f6?style=flat&logo=gmail&logoColor=ffffff" /></a>
+  <img src="https://komarev.com/ghpvc/?username=silasnevstad&style=flat&color=6d72f6" alt="profile views" />
 </p>
 
-<a href="https://github-readme-stats.vercel.app/api?username=silasnevstad"><img align="center" src="https://github-readme-stats.vercel.app/api?username=silasnevstad&show_icons=true&theme=vue&hide_border=true" alt="Silas's github stats" /></a> | <a href="https://github-readme-stats.vercel.app/api/top-langs/?username=silasnevstad"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=silasnevstad&layout=compact&theme=vue&hide_border=true" /></a> |
-| ------------- | ------------- 
+<sub><b>Languages</b></sub><br/>
+<img alt="Python" src="https://img.shields.io/badge/Python-F6F7FF?style=flat&logo=python&logoColor=6d72f6" />
+<img alt="Go" src="https://img.shields.io/badge/Go-F6F7FF?style=flat&logo=go&logoColor=6d72f6" />
+<img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F6F7FF?style=flat&logo=javascript&logoColor=6d72f6" />
+<img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-F6F7FF?style=flat&logo=typescript&logoColor=6d72f6" />
+<img alt="Java" src="https://img.shields.io/badge/Java-F6F7FF?style=flat&logo=openjdk&logoColor=6d72f6" />
+<br/><sub><b>Frameworks</b></sub><br/>
+<img alt="React" src="https://img.shields.io/badge/React-F6F7FF?style=flat&logo=react&logoColor=6d72f6" />
+<img alt="Next.js" src="https://img.shields.io/badge/Next.js-F6F7FF?style=flat&logo=nextdotjs&logoColor=6d72f6" />
+<img alt="Node.js" src="https://img.shields.io/badge/Node.js-F6F7FF?style=flat&logo=nodedotjs&logoColor=6d72f6" />
+<br/><sub><b>Tools</b></sub><br/>
+<img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-F6F7FF?style=flat&logo=postgresql&logoColor=6d72f6" />
+<img alt="GraphQL" src="https://img.shields.io/badge/GraphQL-F6F7FF?style=flat&logo=graphql&logoColor=6d72f6" />
+<img alt="Git" src="https://img.shields.io/badge/Git-F6F7FF?style=flat&logo=git&logoColor=6d72f6" />
+<img alt="Firebase" src="https://img.shields.io/badge/Firebase-F6F7FF?style=flat&logo=firebase&logoColor=6d72f6" />
+<img alt="Supabase" src="https://img.shields.io/badge/Supabase-F6F7FF?style=flat&logo=supabase&logoColor=6d72f6" />
+<img alt="AWS" src="https://img.shields.io/badge/AWS-F6F7FF?style=flat&logo=amazonaws&logoColor=6d72f6" />
+<img alt="Google Cloud" src="https://img.shields.io/badge/Google%20Cloud-F6F7FF?style=flat&logo=googlecloud&logoColor=6d72f6" />
+<img alt="Linux" src="https://img.shields.io/badge/Linux-F6F7FF?style=flat&logo=linux&logoColor=6d72f6" />
+
+<p>
+  <img src="./profile/stats.svg" height="150" />
+  <img src="./profile/top-langs.svg" height="150" />
+  <img src="./profile/isocalendar.svg" height="150" />
+</p>
+
+<p>
+  <img src="./profile/activity-26w.svg" />
+</p>
+
+<details>
+  <summary><b>Projects</b></summary>
+
+<p>
+  <a href="https://runway.rip"><img alt="Runway" src="https://img.shields.io/badge/Runway-6d72f6?style=flat&logo=nextdotjs&logoColor=ffffff" /></a>
+  <a href="https://webpul.se"><img alt="Pulse" src="https://img.shields.io/badge/Pulse-6d72f6?style=flat&logo=postgresql&logoColor=ffffff" /></a>
+  <a href="https://github.com/silasnevstad/GPT-Extension-VSCode"><img alt="GPT Helper" src="https://img.shields.io/badge/GPT%20Helper-6d72f6?style=flat&logo=visualstudiocode&logoColor=ffffff" /></a>
+</p>
+
+</details>
