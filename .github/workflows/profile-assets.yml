@@ -65,7 +65,7 @@ jobs:
           GH_TOKEN: ${{ secrets.METRICS_TOKEN }}
           OUT_PATH: profile/activity-26w.svg
         run: |
-          python scripts/gen_activity_chart_graphql.py
+          python scripts/gen_activity_chart.py
 
       # ---- Commit ----
       - name: Commit profile assets
