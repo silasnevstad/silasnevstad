@@ -36,12 +36,13 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate top languages card
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: soulteary/github-readme-stats-action@v1.0.0
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&hide_border=true&theme=transparent
+          options: 'username=${{ github.repository_owner }}&layout=compact&langs_count=6&hide_border=true&theme=transparent'
           path: profile/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+
 
       # ---- Metrics Isocalendar (half-year) ----
       - name: Generate isocalendar (half-year)
