@@ -56,7 +56,7 @@ jobs:
           filename: profile/isocalendar.svg
           base: ""
           plugin_isocalendar: yes
-          plugin_isocalendar_duration: half-year
+          plugin_isocalendar_duration: full-year
 
       # ---- Account-wide 26-week activity line chart (GraphQL) ----
       - name: Python deps
