@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-03-02T03:52:07.120419</dc:date>
+    <dc:date>2026-03-03T03:51:56.808373</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -41,7 +41,7 @@ z
    </g>
    <g id="FillBetweenPolyCollection_1">
     <defs>
-     <path id="mf200273d22" d="M 50.958409 -26.926364 
+     <path id="me6005464e0" d="M 50.958409 -26.926364 
 L 50.958409 -26.926364 
 L 76.034279 -28.8877 
 L 101.110149 -26.926364 
@@ -62,12 +62,12 @@ L 452.172331 -39.34816
 L 477.248201 -30.849036 
 L 502.324071 -35.425487 
 L 527.399942 -27.580142 
-L 552.475812 -50.462399 
+L 552.475812 -56.346407 
 L 577.551682 -35.425487 
 L 602.627552 -61.576637 
 L 627.703422 -135.453636 
-L 652.779292 -123.03184 
-L 677.855162 -26.926364 
+L 652.779292 -132.838521 
+L 677.855162 -49.154841 
 L 677.855162 -26.926364 
 L 677.855162 -26.926364 
 L 652.779292 -26.926364 
@@ -98,8 +98,8 @@ L 50.958409 -26.926364
 z
 " style="stroke: #6d72f6; stroke-opacity: 0.12"/>
     </defs>
-    <g clip-path="url(#p5e77e73567)">
-     <use xlink:href="#mf200273d22" x="0" y="165.6" style="fill: #6d72f6; fill-opacity: 0.12; stroke: #6d72f6; stroke-opacity: 0.12"/>
+    <g clip-path="url(#pa9fce46c09)">
+     <use xlink:href="#me6005464e0" x="0" y="165.6" style="fill: #6d72f6; fill-opacity: 0.12; stroke: #6d72f6; stroke-opacity: 0.12"/>
     </g>
    </g>
    <g id="matplotlib.axis_1">
@@ -422,13 +422,13 @@ L 452.172331 126.25184
 L 477.248201 134.750964 
 L 502.324071 130.174513 
 L 527.399942 138.019858 
-L 552.475812 115.137601 
+L 552.475812 109.253593 
 L 577.551682 130.174513 
 L 602.627552 104.023363 
 L 627.703422 30.146364 
-L 652.779292 42.56816 
-L 677.855162 138.673636 
-" clip-path="url(#p5e77e73567)" style="fill: none; stroke: #6d72f6; stroke-width: 2.2; stroke-linecap: square"/>
+L 652.779292 32.761479 
+L 677.855162 116.445159 
+" clip-path="url(#pa9fce46c09)" style="fill: none; stroke: #6d72f6; stroke-width: 2.2; stroke-linecap: square"/>
    </g>
    <g id="text_8">
     <!-- Activity (last 26 weeks) -->
@@ -715,7 +715,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p5e77e73567">
+  <clipPath id="pa9fce46c09">
    <rect x="19.613571" y="24.72" width="689.586429" height="119.38"/>
   </clipPath>
  </defs>
