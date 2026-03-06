@@ -12,37 +12,55 @@
 </p>
 
 <sub><b>Languages</b></sub><br/>
-<img alt="Python" src="https://img.shields.io/badge/Python-F6F7FF?style=flat&logo=python&logoColor=6d72f6" />
 <img alt="Go" src="https://img.shields.io/badge/Go-F6F7FF?style=flat&logo=go&logoColor=6d72f6" />
-<img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F6F7FF?style=flat&logo=javascript&logoColor=6d72f6" />
+<img alt="Python" src="https://img.shields.io/badge/Python-F6F7FF?style=flat&logo=python&logoColor=6d72f6" />
 <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-F6F7FF?style=flat&logo=typescript&logoColor=6d72f6" />
+<img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F6F7FF?style=flat&logo=javascript&logoColor=6d72f6" />
+<img alt="C++" src="https://img.shields.io/badge/C++-F6F7FF?style=flat&logo=cplusplus&logoColor=6d72f6" />
 <img alt="Java" src="https://img.shields.io/badge/Java-F6F7FF?style=flat&logo=openjdk&logoColor=6d72f6" />
-<br/><sub><b>Frameworks</b></sub><br/>
+<br/><sub><b>Frontend Frameworks</b></sub><br/>
 <img alt="React" src="https://img.shields.io/badge/React-F6F7FF?style=flat&logo=react&logoColor=6d72f6" />
 <img alt="Next.js" src="https://img.shields.io/badge/Next.js-F6F7FF?style=flat&logo=nextdotjs&logoColor=6d72f6" />
-<img alt="Node.js" src="https://img.shields.io/badge/Node.js-F6F7FF?style=flat&logo=nodedotjs&logoColor=6d72f6" />
-<br/><sub><b>Tools</b></sub><br/>
+<img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind%20CSS-F6F7FF?style=flat&logo=tailwindcss&logoColor=6d72f6" />
+<img alt="React Native" src="https://img.shields.io/badge/React%20Native-F6F7FF?style=flat&logo=react&logoColor=6d72f6" />
+<br/><sub><b>Backend Frameworks</b></sub><br/>
+<img alt="Gin (Go)" src="https://img.shields.io/badge/Gin-F6F7FF?style=flat&logo=go&logoColor=6d72f6" />
+<img alt="tRPC" src="https://img.shields.io/badge/tRPC-F6F7FF?style=flat&logo=trpc&logoColor=6d72f6" />
+<img alt="Express.js" src="https://img.shields.io/badge/Express-F6F7FF?style=flat&logo=express&logoColor=6d72f6" />
+<img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-F6F7FF?style=flat&logo=fastapi&logoColor=6d72f6" />
+<img alt="Django" src="https://img.shields.io/badge/Django-F6F7FF?style=flat&logo=django&logoColor=6d72f6" />
+<br/><sub><b>Machine Learning</b></sub><br/>
+<img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-F6F7FF?style=flat&logo=pytorch&logoColor=6d72f6" />
+<img alt="TensorFlow" src="https://img.shields.io/badge/TensorFlow-F6F7FF?style=flat&logo=tensorflow&logoColor=6d72f6" />
+<img alt="Keras" src="https://img.shields.io/badge/Keras-F6F7FF?style=flat&logo=keras&logoColor=6d72f6" />
+<img alt="Hugging Face" src="https://img.shields.io/badge/HuggingFace-F6F7FF?style=flat&logo=huggingface&logoColor=6d72f6" />
+<br/><sub><b>Infrastructure & Platforms</b></sub><br/>
 <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-F6F7FF?style=flat&logo=postgresql&logoColor=6d72f6" />
-<img alt="GraphQL" src="https://img.shields.io/badge/GraphQL-F6F7FF?style=flat&logo=graphql&logoColor=6d72f6" />
-<img alt="Git" src="https://img.shields.io/badge/Git-F6F7FF?style=flat&logo=git&logoColor=6d72f6" />
-<img alt="Firebase" src="https://img.shields.io/badge/Firebase-F6F7FF?style=flat&logo=firebase&logoColor=6d72f6" />
+<img alt="TimescaleDB" src="https://img.shields.io/badge/TimescaleDB-F6F7FF?style=flat&logo=postgresql&logoColor=6d72f6" />
+<img alt="Redis" src="https://img.shields.io/badge/Redis-F6F7FF?style=flat&logo=redis&logoColor=6d72f6" />
 <img alt="Supabase" src="https://img.shields.io/badge/Supabase-F6F7FF?style=flat&logo=supabase&logoColor=6d72f6" />
+<img alt="Kafka" src="https://img.shields.io/badge/Kafka-F6F7FF?style=flat&logo=apachekafka&logoColor=6d72f6" />
+<img alt="Docker" src="https://img.shields.io/badge/Docker-F6F7FF?style=flat&logo=docker&logoColor=6d72f6" />
+<img alt="Kubernetes" src="https://img.shields.io/badge/Kubernetes-F6F7FF?style=flat&logo=kubernetes&logoColor=6d72f6" />
+<img alt="Terraform" src="https://img.shields.io/badge/Terraform-F6F7FF?style=flat&logo=terraform&logoColor=6d72f6" />
+<img alt="Cloudflare" src="https://img.shields.io/badge/Cloudflare-F6F7FF?style=flat&logo=cloudflare&logoColor=6d72f6" />
 <img alt="AWS" src="https://img.shields.io/badge/AWS-F6F7FF?style=flat&logo=amazonaws&logoColor=6d72f6" />
 <img alt="Google Cloud" src="https://img.shields.io/badge/Google%20Cloud-F6F7FF?style=flat&logo=googlecloud&logoColor=6d72f6" />
 <img alt="Linux" src="https://img.shields.io/badge/Linux-F6F7FF?style=flat&logo=linux&logoColor=6d72f6" />
+<img alt="Git" src="https://img.shields.io/badge/Git-F6F7FF?style=flat&logo=git&logoColor=6d72f6" />
 
-<p>
+<p align="center">
   <img src="./profile/stats.svg" height="150" />
   <img src="./profile/top-langs.svg" height="150" />
   <img src="./profile/isocalendar.svg" height="150" />
 </p>
 
-<p>
+<p align="center">
   <img src="./profile/activity-26w.svg" />
 </p>
 
 <details>
-  <summary><b>Projects</b></summary>
+  <summary><b>Current Projects</b></summary>
 
 <p>
   <a href="https://runway.rip"><img alt="Runway" src="https://img.shields.io/badge/Runway-6d72f6?style=flat&logo=nextdotjs&logoColor=ffffff" /></a>
