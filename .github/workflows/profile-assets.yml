@@ -28,37 +28,34 @@ jobs:
       - name: Ensure output dir
         run: mkdir -p profile
 
-      # ---- GitHub Readme Stats ----
       - name: Generate stats card
         continue-on-error: true
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&hide_border=true&include_all_commits=true&rank_icon=github&theme=transparent
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github&theme=transparent
           path: profile/stats.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PROFILE_STATS_TOKEN }}
 
       - name: Generate top languages card
         continue-on-error: true
         uses: soulteary/github-readme-stats-action@v1.0.0
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&hide_border=true&theme=transparent
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&count_private=true&hide_border=true&theme=transparent
           path: profile/top-langs.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PROFILE_STATS_TOKEN }}
 
-      # ---- Metrics Isocalendar (half-year) ----
       - name: Generate isocalendar (half-year)
         continue-on-error: true
         uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.PROFILE_STATS_TOKEN }}
           filename: profile/isocalendar.svg
           base: ""
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
 
-      # ---- Account-wide 26-week activity line chart (GraphQL) ----
       - name: Python deps
         continue-on-error: true
         run: |
@@ -69,88 +66,7 @@ jobs:
         continue-on-error: true
         env:
           GH_LOGIN: ${{ github.repository_owner }}
-          GH_TOKEN: ${{ secrets.METRICS_TOKEN }}
+          GH_TOKEN: ${{ secrets.PROFILE_STATS_TOKEN }}
           OUT_PATH: profile/activity-26w.svg
         run: |
           python scripts/gen_activity_chart.py
-
-      # ---- Validate outputs; rollback only the bad ones ----
-      - name: Validate & rollback broken assets
-        if: always()
-        shell: bash
-        run: |
-          set -euo pipefail
-
-          git fetch origin "$DEFAULT_BRANCH"
-
-          files=(
-            "profile/stats.svg"
-            "profile/top-langs.svg"
-            "profile/isocalendar.svg"
-            "profile/activity-26w.svg"
-          )
-
-          validate_svg() {
-            local f="$1"
-            [[ -s "$f" ]] || return 1
-            grep -q "<svg" "$f" || return 1
-
-            # Common error payloads
-            if grep -qiE "Something went wrong|Cannot read properties|tiny\.one/readme-stats|rate limit|file an issue|Error:" "$f"; then
-              return 1
-            fi
-
-            return 0
-          }
-
-          restore_previous_or_remove() {
-            local f="$1"
-
-            if git cat-file -e "origin/$DEFAULT_BRANCH:$f" 2>/dev/null; then
-              echo "Rolling back $f to origin/$DEFAULT_BRANCH"
-              git restore --source="origin/$DEFAULT_BRANCH" -- "$f"
-            else
-              echo "Removing invalid new file $f (no prior version in origin/$DEFAULT_BRANCH)."
-              rm -f -- "$f"
-            fi
-          }
-
-          bad=0
-          for f in "${files[@]}"; do
-            if validate_svg "$f"; then
-              echo "OK: $f"
-            else
-              echo "BAD: $f"
-              restore_previous_or_remove "$f"
-              bad=$((bad+1))
-            fi
-          done
-
-          if [[ "$bad" -gt 0 ]]; then
-            echo "Rolled back/removed $bad invalid asset(s)."
-          fi
-
-      # ---- Commit/push only the resulting changes ----
-      - name: Commit profile assets
-        if: always()
-        shell: bash
-        run: |
-          set -euo pipefail
-
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add -A profile || true
-          git diff --cached --quiet && exit 0
-
-          git commit -m "chore: update profile assets"
-
-          git pull --rebase origin "$DEFAULT_BRANCH"
-
-          # small retry to tolerate rare races with manual pushes
-          for i in 1 2 3; do
-            git push origin HEAD:"$DEFAULT_BRANCH" && exit 0
-            sleep $((i*2))
-            git pull --rebase origin "$DEFAULT_BRANCH"
-          done
-          exit 1
