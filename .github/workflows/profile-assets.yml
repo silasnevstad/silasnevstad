@@ -20,10 +20,19 @@ jobs:
       DEFAULT_BRANCH: ${{ github.event.repository.default_branch || 'main' }}
 
     steps:
-      - uses: actions/checkout@v5
+      - name: Checkout default branch
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
           ref: ${{ github.event.repository.default_branch || 'main' }}
+
+      - name: Fast-forward local branch to origin
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin "$DEFAULT_BRANCH"
+          git checkout "$DEFAULT_BRANCH"
+          git reset --hard "origin/$DEFAULT_BRANCH"
 
       - name: Ensure output dir
         run: mkdir -p profile
@@ -46,7 +55,7 @@ jobs:
           path: profile/top-langs.svg
           token: ${{ secrets.PROFILE_STATS_TOKEN }}
 
-      - name: Generate isocalendar (half-year)
+      - name: Generate isocalendar
         continue-on-error: true
         uses: lowlighter/metrics@latest
         with:
@@ -56,9 +65,16 @@ jobs:
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
 
-      - name: Python deps
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install Python deps
         continue-on-error: true
+        shell: bash
         run: |
+          set -euo pipefail
           python -m pip install --upgrade pip
           pip install --disable-pip-version-check matplotlib requests
 
@@ -68,5 +84,98 @@ jobs:
           GH_LOGIN: ${{ github.repository_owner }}
           GH_TOKEN: ${{ secrets.PROFILE_STATS_TOKEN }}
           OUT_PATH: profile/activity-26w.svg
+        shell: bash
         run: |
+          set -euo pipefail
           python scripts/gen_activity_chart.py
+
+      - name: Validate & rollback broken assets
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git fetch origin "$DEFAULT_BRANCH"
+
+          files=(
+            "profile/stats.svg"
+            "profile/top-langs.svg"
+            "profile/isocalendar.svg"
+            "profile/activity-26w.svg"
+          )
+
+          validate_svg() {
+            local f="$1"
+
+            [[ -s "$f" ]] || return 1
+            grep -qi "<svg" "$f" || return 1
+
+            if grep -qiE \
+              "<html|<!doctype html|Something went wrong|Cannot read properties|tiny\.one/readme-stats|rate limit|file an issue|<title>Error|Error:|Bad credentials|API rate limit exceeded|Not Found|Forbidden|You have exceeded a secondary rate limit|abuse detection" \
+              "$f"; then
+              return 1
+            fi
+
+            return 0
+          }
+
+          restore_previous_or_remove() {
+            local f="$1"
+
+            if git cat-file -e "origin/$DEFAULT_BRANCH:$f" 2>/dev/null; then
+              echo "Rolling back $f to origin/$DEFAULT_BRANCH"
+              git restore --source="origin/$DEFAULT_BRANCH" -- "$f"
+            else
+              echo "Removing invalid new file $f (no prior version in origin/$DEFAULT_BRANCH)"
+              rm -f -- "$f"
+            fi
+          }
+
+          bad=0
+          for f in "${files[@]}"; do
+            if validate_svg "$f"; then
+              echo "OK: $f"
+            else
+              echo "BAD: $f"
+              restore_previous_or_remove "$f"
+              bad=$((bad + 1))
+            fi
+          done
+
+          if [[ "$bad" -gt 0 ]]; then
+            echo "Rolled back or removed $bad invalid asset(s)."
+          fi
+
+      - name: Show asset status
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          git status --short profile || true
+          ls -lh profile || true
+
+      - name: Commit profile assets
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A profile || true
+          git diff --cached --quiet && exit 0
+
+          git commit -m "chore: update profile assets"
+
+          for i in 1 2 3; do
+            if git push origin HEAD:"$DEFAULT_BRANCH"; then
+              exit 0
+            fi
+
+            sleep $((i * 2))
+            git fetch origin "$DEFAULT_BRANCH"
+            git rebase "origin/$DEFAULT_BRANCH"
+          done
+
+          exit 1
