@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Silas Nevstad's GitHub Stats, Rank: B</title>
-        <desc id="descId">Total Stars Earned: 37, Total Commits  : 4264, Total PRs: 31, Total Issues: 15, Contributed to (last year): 8</desc>
+        <desc id="descId">Total Stars Earned: 37, Total Commits  : 4280, Total PRs: 31, Total Issues: 15, Contributed to (last year): 8</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 128.5434668299377;
+        stroke-dashoffset: 128.5194212012081;
       }
     }
   
