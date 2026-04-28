@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-04-27T04:19:21.448033</dc:date>
+    <dc:date>2026-04-28T04:21:15.747368</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -41,7 +41,7 @@ z
    </g>
    <g id="FillBetweenPolyCollection_1">
     <defs>
-     <path id="m26ce616419" d="M 42.276597 -26.926364 
+     <path id="ma4238b445b" d="M 42.276597 -26.926364 
 L 42.276597 -26.926364 
 L 67.457874 -28.239194 
 L 92.639152 -26.926364 
@@ -67,7 +67,7 @@ L 571.083423 -29.552023
 L 596.264701 -51.432522 
 L 621.445978 -53.620572 
 L 646.627256 -56.683842 
-L 671.808533 -27.801584 
+L 671.808533 -29.989633 
 L 671.808533 -26.926364 
 L 671.808533 -26.926364 
 L 646.627256 -26.926364 
@@ -98,8 +98,8 @@ L 42.276597 -26.926364
 z
 " style="stroke: #6d72f6; stroke-opacity: 0.12"/>
     </defs>
-    <g clip-path="url(#p8335396540)">
-     <use xlink:href="#m26ce616419" x="0" y="165.6" style="fill: #6d72f6; fill-opacity: 0.12; stroke: #6d72f6; stroke-opacity: 0.12"/>
+    <g clip-path="url(#p7fe476d6ee)">
+     <use xlink:href="#ma4238b445b" x="0" y="165.6" style="fill: #6d72f6; fill-opacity: 0.12; stroke: #6d72f6; stroke-opacity: 0.12"/>
     </g>
    </g>
    <g id="matplotlib.axis_1">
@@ -416,8 +416,8 @@ L 571.083423 136.047977
 L 596.264701 114.167478 
 L 621.445978 111.979428 
 L 646.627256 108.916158 
-L 671.808533 137.798416 
-" clip-path="url(#p8335396540)" style="fill: none; stroke: #6d72f6; stroke-width: 2.2; stroke-linecap: square"/>
+L 671.808533 135.610367 
+" clip-path="url(#p7fe476d6ee)" style="fill: none; stroke: #6d72f6; stroke-width: 2.2; stroke-linecap: square"/>
    </g>
    <g id="text_8">
     <!-- Activity (last 26 weeks) -->
@@ -704,7 +704,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p8335396540">
+  <clipPath id="p7fe476d6ee">
    <rect x="10.8" y="24.72" width="692.48513" height="119.38"/>
   </clipPath>
  </defs>
