@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-05-22T04:31:20.379395</dc:date>
+    <dc:date>2026-05-23T04:21:20.414469</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -41,7 +41,7 @@ z
    </g>
    <g id="FillBetweenPolyCollection_1">
     <defs>
-     <path id="m70c188d61d" d="M 42.545455 -26.926364 
+     <path id="m3794a3b2fa" d="M 42.545455 -26.926364 
 L 42.545455 -26.926364 
 L 67.941818 -31.740073 
 L 93.338182 -35.240953 
@@ -98,8 +98,8 @@ L 42.545455 -26.926364
 z
 " style="stroke: #6d72f6; stroke-opacity: 0.12"/>
     </defs>
-    <g clip-path="url(#p0126c1b423)">
-     <use xlink:href="#m70c188d61d" x="0" y="165.6" style="fill: #6d72f6; fill-opacity: 0.12; stroke: #6d72f6; stroke-opacity: 0.12"/>
+    <g clip-path="url(#p969c90eb3b)">
+     <use xlink:href="#m3794a3b2fa" x="0" y="165.6" style="fill: #6d72f6; fill-opacity: 0.12; stroke: #6d72f6; stroke-opacity: 0.12"/>
     </g>
    </g>
    <g id="matplotlib.axis_1">
@@ -402,7 +402,7 @@ L 601.265455 128.608607
 L 626.661818 133.859927 
 L 652.058182 134.735147 
 L 677.454545 134.297537 
-" clip-path="url(#p0126c1b423)" style="fill: none; stroke: #6d72f6; stroke-width: 2.2; stroke-linecap: square"/>
+" clip-path="url(#p969c90eb3b)" style="fill: none; stroke: #6d72f6; stroke-width: 2.2; stroke-linecap: square"/>
    </g>
    <g id="text_7">
     <!-- Activity (last 26 weeks) -->
@@ -689,7 +689,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p0126c1b423">
+  <clipPath id="p969c90eb3b">
    <rect x="10.8" y="24.72" width="698.4" height="119.38"/>
   </clipPath>
  </defs>
